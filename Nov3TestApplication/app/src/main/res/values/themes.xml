@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.Nov3Application" parent="@style/Theme.Leanback" />
+</resources>
