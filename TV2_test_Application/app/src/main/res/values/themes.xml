@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.TV2_test_Application" parent="@style/Theme.Leanback" />
+</resources>
