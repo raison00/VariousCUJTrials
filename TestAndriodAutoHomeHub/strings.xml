@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomeHub Auto</string>
+    
+    <!-- Screen Titles -->
+    <string name="home_screen_title">Quick Actions</string>
+    <string name="devices_screen_title">All Devices</string>
+    <string name="scenes_screen_title">Scenes</string>
+    
+    <!-- Device Names -->
+    <string name="device_living_room_lights">Living Room Lights</string>
+    <string name="device_bedroom_lights">Bedroom Lights</string>
+    <string name="device_garage_door">Garage Door</string>
+    <string name="device_front_door_lock">Front Door Lock</string>
+    <string name="device_thermostat">Thermostat</string>
+    <string name="device_security_system">Security System</string>
+    <string name="device_porch_lights">Porch Lights</string>
+    <string name="device_kitchen_lights">Kitchen Lights</string>
+    
+    <!-- Actions -->
+    <string name="action_turn_on">Turn On</string>
+    <string name="action_turn_off">Turn Off</string>
+    <string name="action_open">Open</string>
+    <string name="action_close">Close</string>
+    <string name="action_lock">Lock</string>
+    <string name="action_unlock">Unlock</string>
+    <string name="action_arm">Arm</string>
+    <string name="action_disarm">Disarm</string>
+    <string name="action_increase">Increase</string>
+    <string name="action_decrease">Decrease</string>
+    
+    <!-- Status -->
+    <string name="status_on">On</string>
+    <string name="status_off">Off</string>
+    <string name="status_open">Open</string>
+    <string name="status_closed">Closed</string>
+    <string name="status_locked">Locked</string>
+    <string name="status_unlocked">Unlocked</string>
+    <string name="status_armed">Armed</string>
+    <string name="status_disarmed">Disarmed</string>
+    
+    <!-- Scenes -->
+    <string name="scene_arriving_home">Arriving Home</string>
+    <string name="scene_leaving_home">Leaving Home</string>
+    <string name="scene_good_night">Good Night</string>
+    <string name="scene_movie_time">Movie Time</string>
+    
+    <!-- Messages -->
+    <string name="message_device_updated">Device updated successfully</string>
+    <string name="message_scene_activated">Scene activated</string>
+    <string name="message_error">An error occurred</string>
+    
+    <!-- Descriptions -->
+    <string name="desc_arriving_home">Opens garage, turns on lights, adjusts temperature</string>
+    <string name="desc_leaving_home">Closes garage, turns off lights, arms security</string>
+    <string name="desc_good_night">Locks doors, turns off lights, sets night mode</string>
+    <string name="desc_movie_time">Dims lights, closes blinds, sets ambiance</string>
+    
+    <!-- Navigation -->
+    <string name="nav_back">Back</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_all_devices">All Devices</string>
+    <string name="nav_scenes">Scenes</string>
+</resources>
