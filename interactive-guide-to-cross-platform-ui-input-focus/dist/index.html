@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Interactive Guide to Cross-Platform UI Input &amp; Focus</title>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive UI Input & Focus Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="container mx-auto p-4 sm:p-6 md:p-8">
+
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Interactive Guide to Cross-Platform UI Input & Focus</h1>
+            <p class="mt-2 md:mt-4 text-lg text-gray-600 max-w-3xl mx-auto">An exploration of how UI components behave across different input methods. Use the filters below to compare platforms and components.</p>
+        </header>
+
+        <section id="filters" class="mb-8 p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm sticky top-4 z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <span class="font-semibold text-gray-700 mr-3">Filter by Platform:</span>
+                <div id="platform-filters" class="inline-flex rounded-lg shadow-sm" role="group">
+                    <button type="button" data-filter="all" class="filter-btn active py-2 px-4 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100">All</button>
+                    <button type="button" data-filter="desktop" class="filter-btn py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100">Desktop</button>
+                    <button type="button" data-filter="mac" class="filter-btn py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100">Mac</button>
+                    <button type="button" data-filter="android" class="filter-btn py-2 px-4 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-lg hover:bg-gray-100">Android</button>
+                </div>
+            </div>
+            <div class="w-full sm:w-auto">
+                <label for="component-select" class="font-semibold text-gray-700 mr-3">Filter by Component:</label>
+                <select id="component-select" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5">
+                    <option value="all" selected>Show All Components</option>
+                </select>
+            </div>
+        </section>
+
+        <main id="component-grid" class="space-y-6">
+        </main>
+
+        <section id="principles" class="mt-12">
+             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-8">Universal Principles</h2>
+             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-slate-400">
+                    <h3 class="font-bold text-xl mb-3 text-slate-800">Keyboard/Tab Focus (Desktop/Mac)</h3>
+                    <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                        <li><strong>Order (Tab Index):</strong> Focus must move logically through the UI, typically left-to-right, top-to-bottom, following the visual flow.</li>
+                        <li><strong>Visibility:</strong> Every focusable element must display a clear, high-contrast **Focus Ring** or outline to show the user where they are.</li>
+                        <li><strong>Mac Default:</strong> macOS may require users to enable "Full Keyboard Access" in System Settings to allow the Tab key to focus on all controls.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-slate-400">
+                    <h3 class="font-bold text-xl mb-3 text-slate-800">Touch Focus (Android/Mobile)</h3>
+                    <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                        <li><strong>Implicit Focus:</strong> Focus is typically given implicitly upon tapping. Tapping a text field activates it and brings up the keyboard.</li>
+                        <li><strong>Accessibility Services (e.g., TalkBack):</strong> For screen reader users, focus is managed by swiping to move an "accessibility focus" between elements, which are then highlighted and read aloud.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-slate-400 lg:col-span-2">
+                    <h3 class="font-bold text-xl mb-3 text-slate-800">Trackpad/Touchpad Nuances (Mac)</h3>
+                     <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                        <li><strong>Gestures:</strong> Mac trackpads rely heavily on multi-touch gestures (two-finger scroll, pinch-to-zoom). Developers must ensure these OS-level gestures don't conflict with in-app interactions.</li>
+                        <li><strong>Haptic Feedback & Force Touch:</strong> Trackpads provide haptic feedback. A "deep press" or "Force Touch" can be used for secondary actions like previews, offering a unique input method not available on most other devices.</li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+    </div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

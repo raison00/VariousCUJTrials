@@ -1,0 +1,35 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Warm Beige */
+            color: #4A4A4A;
+        }
+        .filter-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .filter-btn.active {
+            background-color: #A88B79; /* Soft Amber */
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        .platform-card {
+            transition: all 0.3s ease-in-out;
+            border-left-width: 4px;
+        }
+        .platform-card.highlight {
+            transform: scale(1.02);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .accordion-content {
+            display: none;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-content.show {
+            display: block;
+        }
+        .accordion-header .icon {
+            transition: transform 0.3s ease-out;
+        }
+        .accordion-header.open .icon {
+            transform: rotate(180deg);
+        }
