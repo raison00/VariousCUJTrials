@@ -15,3 +15,7 @@ This repository documents the architectural patterns and logic used to resolve c
 *  Blocker Resolution: Tactical fixes for underlying system bugs that prevent Critical User Journeys (CUJs) from functioning as intended.
 
 *  Accessibility (A11y): Implementing focus-order logic that meets WCAG AA standards for screen readers and hardware keyboard users.
+
+ ## Screen recordings from these apps are available on YT
+
+[![Watch the video](https://img.youtube.com/vi/fQREPFzanug/maxresdefault.jpg)](https://www.youtube.com/shorts/fQREPFzanug)
