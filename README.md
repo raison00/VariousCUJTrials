@@ -3,7 +3,9 @@
 > Documents the focus management and keyboard/D-pad traversal patterns I developed for Jetpack Compose at Google — resolving focus traps and broken traversal order across Mobile, Foldable, TV, Auto, and Desktop form factors.
 
 **Status:** Presented at Google I/0 2026 Active research / internal patterns adapted for public reference
+
 **My role:** UI Design Lead — Adaptive UI & Design Systems, Google (Consultant: Expertise in Adaptive Technologies)
+
 **Compliance target:** WCAG 2.1 §2.1.2 (No Keyboard Trap), §2.4.3 (Focus Order)
 
 ---
